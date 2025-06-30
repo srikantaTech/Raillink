@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RailLink - Railway Booking UI</title>
+ <link rel="icon" href="raiway.png">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>RailLink - Book Your Train Ticket</h1>
+    <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+  </header>
+
+  <div class="container">
+    <div class="form-group">
+      <label for="from">From Station:</label>
+      <select id="from">
+        <option value="">Select Source</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Chennai">Chennai</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="to">To Station:</label>
+      <select id="to">
+        <option value="">Select Destination</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Chennai">Chennai</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="date">Journey Date:</label>
+      <input type="date" id="date" min="" />
+    </div>
+    <button onclick="searchTrains()">Search Trains</button>
+
+    <div class="train-list" id="trainList"></div>
+    <div class="history">
+      <h2>Booking History</h2>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+<script src="script.js"></script>
+  
+</body>
+</html>
